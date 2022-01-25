@@ -41,6 +41,13 @@ class _HomeState extends State<Home> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'images/icon.png',
+              scale: 9,
+            ),
+            SizedBox(
+              width: 4,
+            ),
             Text(
               "SCRIPTED",
               style: TextStyle(color: Colors.white),

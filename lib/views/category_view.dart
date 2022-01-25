@@ -35,20 +35,27 @@ class _CategoryNewsState extends State<CategoryNews> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFD90000),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'images/icon.png',
+              scale: 9,
+            ),
+            SizedBox(
+              width: 4,
+            ),
             Text(
               "SCRIPTED",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
             ),
             SizedBox(
               width: 7.0,
             ),
             Text(
               "NEWS",
-              style: TextStyle(color: Color(0xFFD90000)),
+              style: TextStyle(color: Colors.white),
             )
           ],
         ),
