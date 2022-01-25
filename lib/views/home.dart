@@ -37,16 +37,20 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFD90000),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Flutter",
-              style: TextStyle(color: Colors.black),
+              "SCRIPTED",
+              style: TextStyle(color: Colors.white),
+            ),
+            SizedBox(
+              width: 7.0,
             ),
             Text(
-              "News",
-              style: TextStyle(color: Colors.blue),
+              "NEWS",
+              style: TextStyle(color: Colors.white),
             )
           ],
         ),
@@ -64,6 +68,7 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Container(
+                      margin: EdgeInsets.only(top: 5.0),
                       height: 70.0,
                       child: ListView.builder(
                           itemCount: categories.length,

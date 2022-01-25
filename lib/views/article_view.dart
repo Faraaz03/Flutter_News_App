@@ -18,16 +18,20 @@ class _ArticleViewState extends State<ArticleView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFD90000),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Flutter",
+              "SCRIPTED",
               style: TextStyle(color: Colors.black),
             ),
+            SizedBox(
+              width: 7.0,
+            ),
             Text(
-              "News",
-              style: TextStyle(color: Colors.blue),
+              "NEWS",
+              style: TextStyle(color: Color(0xFFD90000)),
             )
           ],
         ),
